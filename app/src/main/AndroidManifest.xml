@@ -17,6 +17,16 @@
             </intent-filter>
         </activity>
 
+        <service
+            android:name=".presentation.quicksettings.Service"
+            android:icon="@android:drawable/alert_dark_frame"
+            android:label="Memes"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>
